@@ -1,8 +1,14 @@
 ﻿# ---- CONFIGURATION ----
-$clientID      = "<Your Client ID here>"
-$clientSecret  = "<Your Client Secret here>"
-$tenantID      = "<Your Tenant ID here>"
-$outputPath    = "<Specify the output file path here>"
+# Replace the placeholder values below with your actual Azure AD app details
+$clientID      = "<YOUR_CLIENT_ID>"        # Application (client) ID from Azure AD
+$clientSecret  = "<YOUR_CLIENT_SECRET>"    # Client secret (keep this secure!)
+$tenantID      = "<YOUR_TENANT_ID>"        # Directory (tenant) ID from Azure AD
+$outputPath    = "<FULL_OUTPUT_PATH>"      # Example: C:\Logs\Output.csv
+
+# Sample usage note:
+# This script connects to Azure using a service principal. 
+# Make sure not to commit real secrets to your GitHub repository.
+
 
 
 # Define list of compliant OS versions
