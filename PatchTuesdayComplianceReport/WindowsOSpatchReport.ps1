@@ -101,7 +101,7 @@ if (!(Test-Path -Path (Split-Path $outputPath))) {
     New-Item -Path (Split-Path $outputPath) -ItemType Directory | Out-Null
 }
 $report | Export-Csv -Path $outputPath -NoTypeInformation
-Write-Host "✅ CSV exported to $outputPath`n"
+Write-Host " CSV exported to $outputPath`n"
 
 # ---- SUMMARY ----
 $totalCount       = $report.Count
