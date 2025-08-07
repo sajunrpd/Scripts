@@ -1,5 +1,7 @@
 #Script Created on 7th August 2025, by sajunrpd@gmail.com
- 
+
+Set-ExecutionPolicy Unrestricted -Scope Process -Force 
+
 #Get the currently logged-in user's session (interactive session)
 $loggedInUser = Get-CimInstance -ClassName Win32_ComputerSystem | Select-Object -ExpandProperty UserName
 
@@ -55,4 +57,5 @@ foreach ($folderPath in $folders) {
 
     Write-Host "Granted Full Control to $upn on $folderPath"
 }
+
 
