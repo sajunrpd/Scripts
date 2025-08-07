@@ -46,8 +46,19 @@ Permission Granted
 •	FullControl:
 Read, Write, Modify, Execute, Delete – everything
 Applied to all files and subfolders (ContainerInherit,ObjectInherit)
-Example Log Output
 
- 
+++++++++++++++++++
+Example Log Output
+++++++++++++++++++
+
+1.PowerShell
+Using UPN: AzureAD\DesiSajunR
+Created: C:\Oracle_32
+Granted Full Control to AzureAD\DesiSajunR on C:\Oracle_32
+Created: C:\Oracle_64
+Granted Full Control to AzureAD\DesiSajunR on C:\Oracle_64
+
+
+
 
  
